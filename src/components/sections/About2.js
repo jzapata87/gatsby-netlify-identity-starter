@@ -2,7 +2,6 @@ import React from 'react';
 import styled from 'styled-components';
 import { StaticQuery, graphql } from 'gatsby';
 import Img from 'gatsby-image';
-import Fade from 'react-reveal/Fade';
 
 import { Section, Container } from '@components/global';
 
@@ -47,57 +46,18 @@ const About = () => (
     render={data => (
       <Section id="about">
         <Container>
-          <h1>Foward Looking Firm</h1>
+
           <Grid>
-            <Fade bottom>
             <div>
-              <h2>Technology</h2>
+              <h1>Services</h1>
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sed libero non neque fermentum eleifend sit amet sit amet arcu. Nunc sed dui lobortis, pharetra elit vitae, tristique neque. Aliquam placerat purus vitae ullamcorper varius. Ut commodo eget nunc non.
 
 
               </p>
             </div>
-          </Fade>
-
             <Art>
-              <Fade right>
               <Img fluid={data.art_fast.childImageSharp.fluid} />
-              </Fade>
-            </Art>
-          </Grid>
-          <Grid inverse>
-            <Art>
-              <Fade left>
-              <Img fluid={data.art_learn.childImageSharp.fluid} />
-            </Fade>
-            </Art>
-            <Fade bottom>
-            <div>
-              <h2>People</h2>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sed libero non neque fermentum eleifend sit amet sit amet arcu. Nunc sed dui lobortis, pharetra elit vitae, tristique neque. Aliquam placerat purus vitae ullamcorper varius. Ut commodo eget nunc non.
-
-
-              </p>
-            </div>
-          </Fade>
-          </Grid>
-          <Grid>
-            <Fade bottom>
-            <div>
-              <h2>Client-oriented</h2>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sed libero non neque fermentum eleifend sit amet sit amet arcu. Nunc sed dui lobortis, pharetra elit vitae, tristique neque. Aliquam placerat purus vitae ullamcorper varius. Ut commodo eget nunc non.
-
-
-              </p>
-            </div>
-          </Fade>
-            <Art>
-              <Fade right>
-              <Img fluid={data.art_ideas.childImageSharp.fluid} />
-            </Fade>
             </Art>
           </Grid>
         </Container>
@@ -113,7 +73,7 @@ const Grid = styled.div`
   text-align: right;
   align-items: center;
   justify-items: center;
-  margin: 24px 0;
+  margin: 12px 0;
 
   ${props =>
     props.inverse &&

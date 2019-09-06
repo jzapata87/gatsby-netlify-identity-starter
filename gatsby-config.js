@@ -8,8 +8,8 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: `team`,
-        path: `${__dirname}/src/images/team`,
+        name: `pictures`,
+        path: `${__dirname}/src/images/pictures`,
       },
     },
     {
@@ -19,6 +19,7 @@ module.exports = {
         path: `${__dirname}/src/images/art`,
       },
     },
+    `gatsby-plugin-sass`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
