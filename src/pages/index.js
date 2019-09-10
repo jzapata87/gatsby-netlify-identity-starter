@@ -7,7 +7,7 @@ import {
   Heading,
   Flex
 } from 'rebass'
-// import Navbar from '@common/Navbar';
+import Navbar from '@common/Navbar';
 //
 // import Header from '@sections/Header';
 import About from '@sections/About';
@@ -18,6 +18,8 @@ import About2 from '@sections/About2';
 // import Footer from '@sections/Footer';
 import Slider from '@sections/Slider';
 import NewHeader from '@sections/NewHeader';
+//import {NavigationBar} from '@common/NavigationBar';
+
 
 const Heading1 = styled(Heading)`
   ${'' /* position: absolute; */}
@@ -40,7 +42,7 @@ const AbBox = styled(Flex)`
 
 const IndexPage = () => (
   <Layout>
-
+    <Navbar />
     <NewHeader/>
     <About />
     <About2 />

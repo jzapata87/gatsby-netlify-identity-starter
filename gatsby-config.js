@@ -5,6 +5,7 @@ module.exports = {
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-svgr`,
     `gatsby-plugin-styled-components`,
+    'gatsby-transformer-remark',
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -17,6 +18,13 @@ module.exports = {
       options: {
         name: `art`,
         path: `${__dirname}/src/images/art`,
+      },
+    },
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        path: `${__dirname}/src/pages`,
+        name: 'pages',
       },
     },
     `gatsby-plugin-sass`,
