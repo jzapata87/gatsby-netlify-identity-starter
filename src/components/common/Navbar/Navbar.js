@@ -4,6 +4,7 @@ import { Flex, Image, Box, Text, Link } from 'rebass';
 import styled from 'styled-components';
 import Fade from 'react-reveal/Fade';
 import { Link as GLink } from 'gatsby';
+import Logo from '../../Logo/asset.svg';
 
 const links = ['About', "Services", "Team", "Blog"];
 
@@ -36,7 +37,7 @@ function Navbar() {
         alignItems="center"
         p={3}
       >
-        <Text p={2} fontWeight='bold'>Rebass</Text>
+        <Image src={Logo} width='50px' p={2} fontWeight='bold'/>
         <Box mx='auto' />
         <Box>{links.map((name) => {
 
