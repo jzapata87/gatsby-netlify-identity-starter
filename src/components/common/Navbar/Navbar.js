@@ -17,6 +17,13 @@ const HeaderContainer = styled(Headroom)`
   z-index: 20;
 `;
 
+const LinkText = styled(Text)`
+  font-weight: bold;
+  display: inline-block;
+  z-index: 20;
+`;
+
+
 
 
 function Navbar() {
@@ -33,7 +40,7 @@ function Navbar() {
         <Box mx='auto' />
         <Box>{links.map((name) => {
 
-            return <GLink to={"/services"}><Link mx={2}>{name}</Link></GLink>;
+            return <GLink to={"/services"}><LinkText mx={2}>{name}</LinkText></GLink>;
         }
       )}</Box>
       </Flex>
