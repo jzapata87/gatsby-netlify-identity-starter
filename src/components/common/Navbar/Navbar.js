@@ -37,7 +37,7 @@ function Navbar() {
         alignItems="center"
         p={3}
       >
-        <Image src={Logo} width='50px' p={2} fontWeight='bold'/>
+        <GLink to={"/"}> <Image src={Logo} width='50px' p={2} fontWeight='bold'/></GLink>
         <Box mx='auto' />
         <Box>{links.map((name) => {
 

@@ -2,11 +2,13 @@ import React from 'react';
 import { Link, graphql } from 'gatsby';
 import Layout from '@common/Layout';
 import { Heading, Box, Flex, Card } from 'rebass';
+import Navbar from '@common/Navbar';
 
 const Services = (props) => {
   const services = props.data.allMarkdownRemark.edges;
   return (
     <>
+      <Navbar />
 
         <Box
           sx={{
