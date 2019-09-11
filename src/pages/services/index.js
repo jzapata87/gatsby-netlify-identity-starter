@@ -23,9 +23,9 @@ const Services = (props) => {
             Services
             </Heading>
       </Box>
-      <Flex>
+      <Flex flexWrap="wrap">
           {services.map(edge => (
-            <Card width={[1,1/2,1/4]} m={4} sx={{borderStyle: "solid"}}>
+            <Card m={4} width={[1, 2/5, 1/4]} sx={{borderStyle: "solid"}}>
               <h2>
                 <Link to={edge.node.frontmatter.path}>{edge.node.frontmatter.title}</Link>
               </h2>
