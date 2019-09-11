@@ -3,12 +3,12 @@ import Helmet from 'react-helmet';
 
 const SEO_DATA = {
   description: 'An absurd gatsby starter',
-  title: 'Absurd',
+  title: 'Cascos & Associates',
   url: '',
-  author: 'ajayns',
-  keywords: ['gatsby', 'site', 'absurd'],
+  author: 'Javier Zapata',
+  keywords: ['accounting', 'rio grande valley', 'audit'],
   twitter: {
-    id: '@ajayns08',
+    id: '',
     img: '',
   },
   facebook: {

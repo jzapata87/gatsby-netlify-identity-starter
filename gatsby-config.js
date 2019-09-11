@@ -33,13 +33,13 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Absurd`,
-        short_name: `absurd`,
+        name: `Cascos & Associates`,
+        short_name: `C&A`,
         start_url: `/`,
-        background_color: `#8bd8ed`,
-        theme_color: `#8bd8ed`,
+        background_color: `#F7F7F6`,
+        theme_color: `#F7F7F6`,
         display: `minimal-ui`,
-        icon: `static/favicon.svg`,
+        icon: `static/asset.svg`,
       },
     },
     {
