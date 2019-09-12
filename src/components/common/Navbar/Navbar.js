@@ -6,7 +6,7 @@ import Fade from 'react-reveal/Fade';
 import { Link as GLink } from 'gatsby';
 import Logo from '../../Logo/asset.svg';
 
-const links = ['About', "Services", "Team", "Blog"];
+const links = [{page: 'About', link: "/about"}, {page: 'Services', link: "/services"}, {page: 'Team', link: "/team"}, {page: 'Blog', link: "/services"}];
 
 const HeaderContainer = styled(Headroom)`
 
@@ -39,9 +39,9 @@ function Navbar() {
       >
         <GLink to={"/"}> <Image src={Logo} width='50px' p={2} fontWeight='bold'/></GLink>
         <Box mx='auto' />
-        <Box>{links.map((name) => {
+        <Box>{links.map((obj) => {
 
-            return <GLink to={"/services"}><LinkText mx={2}>{name}</LinkText></GLink>;
+            return <GLink to={obj.link}><LinkText color={'black'} mx={2}>{obj.page}</LinkText></GLink>;
         }
       )}</Box>
       </Flex>

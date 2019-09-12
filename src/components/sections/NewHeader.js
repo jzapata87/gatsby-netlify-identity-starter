@@ -27,6 +27,7 @@ const AbBox = styled(Flex)`
   ${'' /* left: 50%;
   transform: translate(-50%, 0); */}
   z-index: 1;
+  background-image: linear-gradient(rgba(169, 177, 189, 0.5), rgba(169, 177, 189, 0.5));
 `;
 
 const Cox = styled(Box)`

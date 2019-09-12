@@ -8,10 +8,7 @@ const GlobalStyles = createGlobalStyle`
   ${normalize};
   position: relative;
 
-  body {
-    font-family: ${props => props.theme.font.secondary};
 
-  }
 
   #gatsby-focus-wrapper {
     position: relative;
