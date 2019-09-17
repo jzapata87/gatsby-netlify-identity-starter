@@ -1,8 +1,35 @@
 import React from 'react';
 import { Link, graphql } from 'gatsby';
+import styled from 'styled-components';
 import Layout from '@common/Layout';
 import { Heading, Box, Flex, Card, Image, Text } from 'rebass';
 import Navbar from '@common/Navbar';
+
+const CardContainer = styled(Box)`
+  display: grid;
+  grid-gap: 30px;
+  grid-template-columns: 2fr 3fr;
+  text-align: left;
+  margin: 24px;
+  justify-items: center;
+  @media only screen and (max-width: 400px) {
+    grid-template-columns: 1fr;
+  }
+`;
+
+const CardGrid = styled(Box)`
+  display: grid;
+  grid-gap: 30px;
+  grid-template-columns: 2fr 3fr;
+  text-align: left;
+  margin: 24px;
+  justify-items: center;
+  @media only screen and (max-width: 400px) {
+    grid-template-columns: 1fr;
+  }
+`;
+
+
 
 const Team = (props) => {
   const team = props.data.allMarkdownRemark.edges;
@@ -25,39 +52,43 @@ const Team = (props) => {
             Team
             </Heading>
       </Box>
-      <Flex flexWrap="wrap">
+      <Box>
 
-        <Card width={[ 256, 320 ]} mx='auto' p={2}>
-          <Heading >Principle</Heading>
+        <CardContainer mx='auto' width={[ 1, 1, 1]} p={2}>
+
           <Image
             sx={{
               borderRadius: 5,
             }}
             src='https://source.unsplash.com/random/512x384?space'
           />
-          <Heading as={"h2"}>Carlos Cascos</Heading>
-          <Text>Et Aeneae, nivosos magos, donata in quod cum [terris](#loco-aris), cumque solum,
-          manibus auro moenibus glaebas. Manus incaluere. Nunc audiat teneat dextra,
-          finivit cui male venit moves! Senior et niger tepido parenti fuit, in ponit
-          spectemur et opto speret. Ferum Neptunus tergore.</Text>
-        </Card>
+          <div>
+            <Heading as={"h2"}>Carlos Cascos, Principle</Heading>
+            <Text>Et Aeneae, nivosos magos, donata in quod cum [terris](#loco-aris), cumque solum,
+            manibus auro moenibus glaebas. Manus incaluere. Nunc audiat teneat dextra,
+            finivit cui male venit moves! Senior et niger tepido parenti fuit, in ponit
+            spectemur et opto speret. Ferum Neptunus tergore.</Text>
+          </div>
+        </CardContainer>
 
 
 
-      </Flex>
+      </Box>
       <Flex flexWrap="wrap">
           {team.map(edge => (
 
-              <Card width={[ 256, 320 ]} mx='auto' p={2}>
+              <CardGrid width={[ 1, 1, 1/2]} mx='auto' p={2}>
                 <Image
                   sx={{
                     borderRadius: 5,
                   }}
                   src={edge.node.frontmatter.image}
                 />
-                <Heading>{edge.node.frontmatter.title}</Heading>
-                <div dangerouslySetInnerHTML={{ __html: edge.node.html }} />
-              </Card>
+                <div>
+                  <Heading>{edge.node.frontmatter.title}</Heading>
+                  <div dangerouslySetInnerHTML={{ __html: edge.node.html }} />
+                </div>
+              </CardGrid>
 
           ))}
       </Flex>

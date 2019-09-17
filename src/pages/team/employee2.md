@@ -1,6 +1,6 @@
 ---
 path: '/team/sage-kirk'
-title: 'Delia Soto'
+title: 'Delia'
 date: 2018-11-19T10:47:58+10:00
 draft: false
 image: 'https://source.unsplash.com/random/512x384?space'
