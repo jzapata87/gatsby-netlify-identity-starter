@@ -46,7 +46,8 @@ const Footer = () => (
       <BoxFooter>
         <BoxFooterDetail m={3}>
           <Box borderBottom="5px solid black">
-            <BoxFooterDetailTitle fontSize={[5,5,5]}>Location</BoxFooterDetailTitle>
+            <h1>Location</h1>
+            <Line/>
           </Box>
           <Text>765 East 7th Street</Text>
           <Text>Brownsville, Texas 78520</Text>
@@ -54,7 +55,8 @@ const Footer = () => (
         </BoxFooterDetail>
         <BoxFooterDetail m={3}>
           <Box mb={1} borderBottom="5px solid black">
-            <BoxFooterDetailTitle fontSize={[5,5,5]}>Connect</BoxFooterDetailTitle>
+            <h1>Connect</h1>
+            <Line/>
           </Box>
           <SocialIcons>
             <img src={InstagramIcon} alt="link" />
@@ -70,6 +72,12 @@ const Footer = () => (
     )}
   />
 );
+
+const Line = styled('hr')`
+  border-width: 1px;
+  margin: 4px 0px;
+  border-color: black;
+`;
 
 const BoxFooter = styled(Flex)`
   min-height: 50vh;

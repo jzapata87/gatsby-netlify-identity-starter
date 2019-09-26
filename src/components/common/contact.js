@@ -24,9 +24,16 @@ function encode(data) {
     .join('&');
 }
 
+const Line = styled('hr')`
+  border-width: 1px;
+  margin: 4px 0px;
+  border-color: black;
+`;
+
 export const ValidationSchemaExample = () => (
   <div>
-    <h1>Signup</h1>
+    <h1>Contact Us</h1>
+    <Line/>
     <Formik
       initialValues={{
         firstName: '',
