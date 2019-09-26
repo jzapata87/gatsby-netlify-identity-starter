@@ -33,7 +33,7 @@ export const ValidationSchemaExample = () => (
       }}
     >
       {({ errors, touched }) => (
-        <Form data-netlify="true" name="contact">
+        <Form data-netlify="true" method="POST" name="contact">
           <label htmlFor="email" style={{ display: 'block' }}>
             First Name
           </label>
