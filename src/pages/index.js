@@ -3,14 +3,13 @@ import styled from 'styled-components';
 import Layout from '@common/Layout';
 import { Box, Text, Heading, Flex } from 'rebass';
 import Navbar from '@common/Navbar';
-//
+import Footer from '@sections/Footer';
 // import Header from '@sections/Header';
 import About from '@sections/About';
 import About2 from '@sections/About2';
 // import Brands from '@sections/Brands';
 // import Team from '@sections/Team';
 // import Faq from '@sections/Faq';
-import Footer from '@sections/Footer';
 import Slider from '@sections/Slider';
 import NewHeader from '@sections/NewHeader';
 //import {NavigationBar} from '@common/NavigationBar';
@@ -35,11 +34,11 @@ const AbBox = styled(Flex)`
 
 const IndexPage = () => (
   <Layout>
-    <Navbar />
+
     <NewHeader />
     <About />
     <About2 />
-    <Footer />
+
   </Layout>
 );
 

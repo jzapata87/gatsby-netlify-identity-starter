@@ -2,13 +2,13 @@ import React from 'react';
 import { graphql } from 'gatsby';
 import { Heading, Box } from 'rebass';
 import Navbar from '@common/Navbar';
+import Layout from '@common/Layout';
 
 const Service = ({ data }) => {
   const { title } = data.markdownRemark.frontmatter;
   const { html } = data.markdownRemark;
   return (
-    <>
-      <Navbar />
+    <Layout>
       <Box
         sx={{
           px: 4,
@@ -39,7 +39,7 @@ const Service = ({ data }) => {
           </div>
         </div>
       </div>
-    </>
+    </Layout>
   );
 };
 

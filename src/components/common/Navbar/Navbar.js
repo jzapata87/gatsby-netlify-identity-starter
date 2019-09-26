@@ -7,7 +7,7 @@ import { Link as GLink } from 'gatsby';
 import Logo from '../../Logo/asset.svg';
 
 const links = [
-  { page: 'About', link: '/about' },
+  { page: 'Home', link: '/' },
   { page: 'Services', link: '/services' },
   { page: 'Team', link: '/team' },
   { page: 'Blog', link: '/services' },

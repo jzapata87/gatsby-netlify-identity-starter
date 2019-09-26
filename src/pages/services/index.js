@@ -2,13 +2,13 @@ import React from 'react';
 import { Link, graphql } from 'gatsby';
 import Layout from '@common/Layout';
 import { Heading, Box, Flex, Card } from 'rebass';
-import Navbar from '@common/Navbar';
+
 
 const Services = props => {
   const services = props.data.allMarkdownRemark.edges;
   return (
-    <>
-      <Navbar />
+    <Layout>
+
 
       <Box
         sx={{
@@ -19,19 +19,20 @@ const Services = props => {
           backgroundSize: 'cover',
           color: 'white',
           bg: 'gray',
+
         }}
       >
         <Heading textAlign="center" fontSize={[5, 6]}>
           Services
         </Heading>
       </Box>
-      <Flex flexWrap="wrap">
+      <Flex sx={{justifyContent: 'center', padding: '5vh'}} flexWrap="wrap">
         {services.map(edge => (
           <Card
             m={4}
             p={2}
             width={[1, 2 / 5, 1 / 4]}
-            sx={{ borderStyle: 'solid' }}
+            sx={{ borderStyle: 'solid', borderRadius: 6 }}
           >
             <h2>
               <Link to={edge.node.frontmatter.path}>
@@ -42,7 +43,7 @@ const Services = props => {
           </Card>
         ))}
       </Flex>
-    </>
+    </Layout>
   );
 };
 
