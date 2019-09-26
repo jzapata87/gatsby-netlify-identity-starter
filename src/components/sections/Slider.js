@@ -2,13 +2,8 @@ import React, { Fragment } from 'react';
 import styled from 'styled-components';
 import { StaticQuery, graphql } from 'gatsby';
 import Img from 'gatsby-image';
-import {
-  Box,
-  Text,
-  Heading
-} from 'rebass'
+import { Box, Text, Heading } from 'rebass';
 import Carousel from 'react-bootstrap/Carousel';
-
 
 const TEAM = [
   {
@@ -23,7 +18,6 @@ const TEAM = [
     name: 'img3',
     image: 'img3.jpg',
   },
-
 ];
 
 const Relative = styled(Heading)`
@@ -55,20 +49,13 @@ const Slider = () => (
       }
     `}
     render={data => (
-
-
-
-            <Carousel controls='false'>
-              {data.allFile.edges.map(pic =>
-              <Carousel.Item key={pic.relativePath}>
-                  <Img fluid={pic.node.childImageSharp.fluid}/>
-              </Carousel.Item>
-              )}
-            </Carousel>
-
-
-
-
+      <Carousel controls="false">
+        {data.allFile.edges.map(pic => (
+          <Carousel.Item key={pic.relativePath}>
+            <Img fluid={pic.node.childImageSharp.fluid} />
+          </Carousel.Item>
+        ))}
+      </Carousel>
     )}
   />
 );

@@ -2,9 +2,10 @@ import React from 'react';
 import styled from 'styled-components';
 import { StaticQuery, graphql } from 'gatsby';
 import Img from 'gatsby-image';
-
+import { Box, Text, Heading, Button, Flex } from 'rebass';
 import { Container } from '@components/global';
 import ExternalLink from '@common/ExternalLink';
+import { ValidationSchemaExample } from '@common/contact';
 
 import GithubIcon from '@static/icons/github.svg';
 import InstagramIcon from '@static/icons/instagram.svg';
@@ -42,38 +43,46 @@ const Footer = () => (
       }
     `}
     render={data => (
-      <React.Fragment>
-        <Art>
-          <Img
-            fluid={data.art_pot.childImageSharp.fluid}
-            style={{ width: 480, maxWidth: '100%', marginBottom: -16 }}
-          />
-        </Art>
-        <FooterWrapper>
-          <StyledContainer>
-            <Copyright>
-              <h2>Absurd</h2>
-              <span>
-                Illustrations by
-                {` `}
-                <ExternalLink href="https://twitter.com/diana_valeanu">
-                  @diana_valeanu
-                </ExternalLink>
-              </span>
-            </Copyright>
-            <SocialIcons>
-              {SOCIAL.map(({ icon, link }) => (
-                <ExternalLink href={link}>
-                  <img src={icon} alt="link" />
-                </ExternalLink>
-              ))}
-            </SocialIcons>
-          </StyledContainer>
-        </FooterWrapper>
-      </React.Fragment>
+      <BoxFooter>
+        <BoxFooterDetail>
+          <Box borderBottom='5px solid black'><BoxFooterDetailTitle>Location</BoxFooterDetailTitle></Box>
+          <Text>765 East 7th Street</Text>
+          <Text>Brownsville, Texas 78520</Text>
+          <Text>956-544-7778</Text>
+        </BoxFooterDetail>
+        <BoxFooterDetail>
+          <Box mb={1} borderBottom='5px solid black'><BoxFooterDetailTitle>Connect</BoxFooterDetailTitle></Box>
+          <SocialIcons>
+            <img src={InstagramIcon} alt="link" />
+            <img src={TwitterIcon} alt="link" />
+          </SocialIcons>
+
+        </BoxFooterDetail>
+        <BoxFooterDetail>
+          <ValidationSchemaExample/>
+        </BoxFooterDetail>
+
+      </BoxFooter>
     )}
   />
 );
+
+const BoxFooter = styled(Flex)`
+  min-height: 50vh;
+  justify-content: space-evenly;
+  align-content: center;
+  align-items: center;
+
+`;
+
+const BoxFooterDetailTitle = styled(Text)`
+  border-bottom: 2px solid black;
+`;
+
+
+const BoxFooterDetail = styled(Box)`
+
+`;
 
 const SocialIcons = styled.div`
   display: flex;

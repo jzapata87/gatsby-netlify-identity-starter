@@ -1,7 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
-import { StaticQuery, graphql } from 'gatsby';
+import { StaticQuery, graphql, Link } from 'gatsby';
 import Img from 'gatsby-image';
+import { Box, Text, Heading, Button } from 'rebass';
 
 import { Section, Container } from '@components/global';
 
@@ -44,17 +45,17 @@ const About = () => (
       }
     `}
     render={data => (
-      <Section id="about">
+      <Section id="about" style={{backgroundColor: "rgb(139, 216, 237)"}}>
         <Container>
-
           <Grid>
             <div>
               <h1>Services</h1>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sed libero non neque fermentum eleifend sit amet sit amet arcu. Nunc sed dui lobortis, pharetra elit vitae, tristique neque. Aliquam placerat purus vitae ullamcorper varius. Ut commodo eget nunc non.
-
-
+                We provide a range of services to clients of different sizes.  Whether it be small businesses
+                gaining value by our bookkeeping service or non-profits ensuring compliance, our firm works hard to
+                provide tailored solutions to meet the needs of your organization.
               </p>
+              <Link to="/services"><Button my={2} backgroundColor="white" color="black">Learn More</Button></Link>
             </div>
             <Art>
               <Img fluid={data.art_fast.childImageSharp.fluid} />

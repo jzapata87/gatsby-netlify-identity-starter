@@ -5,48 +5,17 @@ date: 2018-11-18T12:33:46+10:00
 image: 'services/noun_591323.png'
 ---
 
-Lorem markdownum aequalis strigis. _Saetigeri iubeas_, vultu huic alvum nondum
-de obside ut laniavit arbor palmis, cum quin. Rupes vetat videndo, armigerae
-crimen habet Priamum nec.
+The term bookkeeping means different things to different people.
 
-## Ne verba patulosque numen vix libet
+- Many believe that bookkeeping is the same as accounting.  They assume that keeping a company's books and preparing its financial statements and tax reports are all part of bookkeeping, while others see bookkeeping as limited to recording transactions in journals or dayboooks and then posting the amounts in accounts in ledgers.
 
-Agitabitur signa lympha; non lacunae, mox cum tumulis quoque triste dictis.
-Ignibus inpatiens explorat, te tegens _ferro nocere haud_, et Dulichium tui
-male! Quo sed [fuit flexit et](#vexant-achivi) hic die solido, gloria?
+- Larger entities may have their own bookkeeping departments, whereby their bookkeeping is done in-house as transactions occur.  The results of those transactions can then be used, to either prepare a tax return or provide the financial information for the conduct of an independent audit, review or compilation by a CPA.  **That is accounting**.
 
-1. Cum det dixit Parcarum qui spemque est
-2. Exit ex huic
-3. Quod consiste agitataque claustraque vicina videt lacertis
-4. Loquor videt
-5. Ardua non igne caelesti coniugis cognovi diversorum
-6. Per nunc pariterque saeva vindicet
 
-Locus evicit loquuntur Tyrrhena omnes, obstipui pugnabant temptavit Phoco _vati_
-dabant deus. Memorata haberet sepulcrales gentisque dum sic, in flumina templa!
-Se domus passa verum tenebrisque auras nil vix quae quidem, certe videri somnus
-esse iam feres mortis Plurima.
+Our firm provides **after the fact bookkeeping services** for a variety of clients, including attorneys, doctors, construction companies, realty companies, just to name a few, using **Quick Books Pro**.  There is no entity too small or large to whom we cannot provide bookkeeping services.
 
-## Postquam tamen
+Those services include:
+- the posting of transactions utilizing the client's bank records
+- preparation of payroll reports, such as Federal Employee's Quarterly Reports (941s), Annual Federal Unemployment Tax Return (940), Texas Workforce Commission Reports & annual W-2s & 1099's, if applicable.
 
-Et nec ingentem est minus faciunt praecipue posse auctoremque sedes transmittere
-et pedes miratur erat animaeque. Tellus admonuit humanam funes, sagittis et
-licet! Inserui quamvis Clymeni.
-
-- Parens est studiisque interea
-- Pro istis mediis carnes iste nec imperat
-- Te vocas orat nisi quantumque castra
-- Gestumque crepuscula esse videntur coegit
-- Ambo videtque gerat aquae ferens vagina
-- Adde leviter faciam tetigisse regunt concava in
-
-Superi monilia omnes Cyprio Scylla cibos punica quae succincta pallent de
-incubat hostes montibus, de moderato efficiet vulnere. Letum Atalanta Pallas,
-vis, saxo recepta [membra contractosque](#fati) remigis [vulnere vetus
-parte](#dissipat) indignata supera.
-
-Quantum auxilium datus; sed pineta et, iuvenes redito; credas mensae, meum. Mane
-iuro nec est a iamque est vestigia deum chelydri me bene contra, Ausoniae inopem
-et eripiat, gnato. Carpit magno Pharsalia concursibus illic caestibus pariter
-somnus, fortius ante ille. Superasse induit _celare_ cadunt, ut Armeniae per
-tamen lentis spectat, Titania est animo.
+Utilizing the information provided & posted, we can provide compiled or reviewed financial statements, either on a monthly, quarterly, semiannual or annual basis.

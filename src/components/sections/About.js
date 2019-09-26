@@ -1,8 +1,9 @@
 import React from 'react';
 import styled from 'styled-components';
-import { StaticQuery, graphql } from 'gatsby';
+import { StaticQuery, graphql, Link } from 'gatsby';
 import Img from 'gatsby-image';
 import Fade from 'react-reveal/Fade';
+import { Box, Text, Heading, Button } from 'rebass';
 
 import { Section, Container } from '@components/global';
 
@@ -50,54 +51,59 @@ const About = () => (
           <h1>Foward Looking Firm</h1>
           <Grid>
             <Fade bottom>
-            <div>
-              <h2>Technology</h2>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sed libero non neque fermentum eleifend sit amet sit amet arcu. Nunc sed dui lobortis, pharetra elit vitae, tristique neque. Aliquam placerat purus vitae ullamcorper varius. Ut commodo eget nunc non.
-
-
-              </p>
-            </div>
-          </Fade>
+              <div>
+                <h2>Technology</h2>
+                <p>
+                  Here at Cascos & Associates, know that innovation is the key to remain a
+                  competitive business.  Technology has the power to not only help our business
+                  increase efficiency and productivity but to also help produce the results our
+                  clients demand of us.  We strive to integrade industry leading technology to
+                  produce an amazing product.  This is what sets us apart from other firms in the area.
+                </p>
+              </div>
+            </Fade>
 
             <Art>
               <Fade right>
-              <Img fluid={data.art_fast.childImageSharp.fluid} />
+                <Img fluid={data.art_fast.childImageSharp.fluid} />
               </Fade>
             </Art>
           </Grid>
           <Grid inverse>
             <Art>
               <Fade left>
-              <Img fluid={data.art_learn.childImageSharp.fluid} />
-            </Fade>
+                <Img fluid={data.art_learn.childImageSharp.fluid} />
+              </Fade>
             </Art>
             <Fade bottom>
-            <div>
-              <h2>People</h2>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sed libero non neque fermentum eleifend sit amet sit amet arcu. Nunc sed dui lobortis, pharetra elit vitae, tristique neque. Aliquam placerat purus vitae ullamcorper varius. Ut commodo eget nunc non.
-
-
-              </p>
-            </div>
-          </Fade>
+              <div>
+                <h2>People</h2>
+                <p>
+                  Our firm is not possible without our dedicated professionsal who work deligently to serve our clients.
+                  We take great pride in keeping up with accouting/tax standards.  We guarentee that our employees
+                  will utilize their knowledge to get the job done.
+                </p>
+                <Link to="/team"><Button my={2} backgroundColor="rgb(139, 216, 237)" color="black">Meet the Team</Button></Link>
+              </div>
+            </Fade>
           </Grid>
           <Grid>
             <Fade bottom>
-            <div>
-              <h2>Client-oriented</h2>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sed libero non neque fermentum eleifend sit amet sit amet arcu. Nunc sed dui lobortis, pharetra elit vitae, tristique neque. Aliquam placerat purus vitae ullamcorper varius. Ut commodo eget nunc non.
+              <div>
+                <h2>Client-oriented</h2>
+                <p>
+                  We know people are the bedrock of any business.  Our commitment to providing
+                  audit, accouting and business services while stregthening client relationships is at the forefront of our firm.
+                  We make it a point to work with our clients in any unforseem circumstances.  We will
+                  be known as a firm that puts clients first.
 
-
-              </p>
-            </div>
-          </Fade>
+                </p>
+              </div>
+            </Fade>
             <Art>
               <Fade right>
-              <Img fluid={data.art_ideas.childImageSharp.fluid} />
-            </Fade>
+                <Img fluid={data.art_ideas.childImageSharp.fluid} />
+              </Fade>
             </Art>
           </Grid>
         </Container>

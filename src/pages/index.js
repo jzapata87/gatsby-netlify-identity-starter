@@ -1,12 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import Layout from '@common/Layout';
-import {
-  Box,
-  Text,
-  Heading,
-  Flex
-} from 'rebass'
+import { Box, Text, Heading, Flex } from 'rebass';
 import Navbar from '@common/Navbar';
 //
 // import Header from '@sections/Header';
@@ -15,11 +10,10 @@ import About2 from '@sections/About2';
 // import Brands from '@sections/Brands';
 // import Team from '@sections/Team';
 // import Faq from '@sections/Faq';
-// import Footer from '@sections/Footer';
+import Footer from '@sections/Footer';
 import Slider from '@sections/Slider';
 import NewHeader from '@sections/NewHeader';
 //import {NavigationBar} from '@common/NavigationBar';
-
 
 const Heading1 = styled(Heading)`
   ${'' /* position: absolute; */}
@@ -28,7 +22,6 @@ const Heading1 = styled(Heading)`
   ${'' /* margin: auto; */}
 
   text-shadow: 2px 2px 2px white;
-
 `;
 
 const AbBox = styled(Flex)`
@@ -43,19 +36,21 @@ const AbBox = styled(Flex)`
 const IndexPage = () => (
   <Layout>
     <Navbar />
-    <NewHeader/>
+    <NewHeader />
     <About />
     <About2 />
-
+    <Footer/>
   </Layout>
 );
 
 export default IndexPage;
 
-{/* <Navbar />
+{
+  /* <Navbar />
 <Header />
 <About />
 <Brands />
 <Team />
 <Faq />
-<Footer /> */}
+<Footer /> */
+}
