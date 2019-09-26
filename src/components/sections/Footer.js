@@ -44,24 +44,26 @@ const Footer = () => (
     `}
     render={data => (
       <BoxFooter>
-        <BoxFooterDetail>
+        <BoxFooterDetail m={3}>
           <Box borderBottom="5px solid black">
-            <BoxFooterDetailTitle>Location</BoxFooterDetailTitle>
+            <BoxFooterDetailTitle fontSize={[5,5,5]}>Location</BoxFooterDetailTitle>
           </Box>
           <Text>765 East 7th Street</Text>
           <Text>Brownsville, Texas 78520</Text>
           <Text>956-544-7778</Text>
         </BoxFooterDetail>
-        <BoxFooterDetail>
+        <BoxFooterDetail m={3}>
           <Box mb={1} borderBottom="5px solid black">
-            <BoxFooterDetailTitle>Connect</BoxFooterDetailTitle>
+            <BoxFooterDetailTitle fontSize={[5,5,5]}>Connect</BoxFooterDetailTitle>
           </Box>
           <SocialIcons>
             <img src={InstagramIcon} alt="link" />
             <img src={TwitterIcon} alt="link" />
+            <img src={TwitterIcon} alt="link" />
+            <img src={TwitterIcon} alt="link" />
           </SocialIcons>
         </BoxFooterDetail>
-        <BoxFooterDetail>
+        <BoxFooterDetail m={3}>
           <ValidationSchemaExample />
         </BoxFooterDetail>
       </BoxFooter>
@@ -73,26 +75,36 @@ const BoxFooter = styled(Flex)`
   min-height: 50vh;
   justify-content: space-evenly;
   align-content: center;
-  align-items: center;
+
+
+
+  @media (max-width: ${props => props.theme.screen.sm}) {
+    flex-direction: column;
+    align-items: center;
+
+  }
 `;
 
 const BoxFooterDetailTitle = styled(Text)`
   border-bottom: 2px solid black;
 `;
 
-const BoxFooterDetail = styled(Box)``;
+const BoxFooterDetail = styled('div')`
+  min-width: 35vh;
+  margin: 2vh;
+`;
 
 const SocialIcons = styled.div`
-  display: flex;
+
 
   img {
-    margin: 0 8px;
+    margin-right: 8px;
     width: 24px;
     height: 24px;
   }
 
   @media (max-width: ${props => props.theme.screen.sm}) {
-    margin-top: 40px;
+    margin-top: 10px;
   }
 `;
 

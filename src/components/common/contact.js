@@ -55,21 +55,21 @@ export const ValidationSchemaExample = () => (
           <label htmlFor="email" style={{ display: 'block' }}>
             First Name
           </label>
-          <Field name="firstName" />
+          <Field name="firstName" style={{ borderStyle: 'solid', borderRadius: '5px' }}/>
           {errors.firstName && touched.firstName ? (
             <div>{errors.firstName}</div>
           ) : null}
           <label htmlFor="email" style={{ display: 'block' }}>
             Last Name
           </label>
-          <Field name="lastName" />
+          <Field name="lastName" style={{ borderStyle: 'solid', borderRadius: '5px' }}/>
           {errors.lastName && touched.lastName ? (
             <div>{errors.lastName}</div>
           ) : null}
           <label htmlFor="email" style={{ display: 'block' }}>
             Email
           </label>
-          <Field name="email" type="email" />
+          <Field name="email" type="email" style={{ borderStyle: 'solid', borderRadius: '5px' }}/>
           {errors.email && touched.email ? <div>{errors.email}</div> : null}
           <button style={{ display: 'block' }} type="submit">
             Submit
