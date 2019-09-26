@@ -54,11 +54,13 @@ const About = () => (
               <div>
                 <h2>Technology</h2>
                 <p>
-                  Here at Cascos & Associates, know that innovation is the key to remain a
-                  competitive business.  Technology has the power to not only help our business
-                  increase efficiency and productivity but to also help produce the results our
-                  clients demand of us.  We strive to integrade industry leading technology to
-                  produce an amazing product.  This is what sets us apart from other firms in the area.
+                  Here at Cascos & Associates, know that innovation is the key
+                  to remain a competitive business. Technology has the power to
+                  not only help our business increase efficiency and
+                  productivity but to also help produce the results our clients
+                  demand of us. We strive to integrade industry leading
+                  technology to produce an amazing product. This is what sets us
+                  apart from other firms in the area.
                 </p>
               </div>
             </Fade>
@@ -79,11 +81,21 @@ const About = () => (
               <div>
                 <h2>People</h2>
                 <p>
-                  Our firm is not possible without our dedicated professionsal who work deligently to serve our clients.
-                  We take great pride in keeping up with accouting/tax standards.  We guarentee that our employees
-                  will utilize their knowledge to get the job done.
+                  Our firm is not possible without our dedicated professionsal
+                  who work deligently to serve our clients. We take great pride
+                  in keeping up with accouting/tax standards. We guarentee that
+                  our employees will utilize their knowledge to get the job
+                  done.
                 </p>
-                <Link to="/team"><Button my={2} backgroundColor="rgb(139, 216, 237)" color="black">Meet the Team</Button></Link>
+                <Link to="/team">
+                  <Button
+                    my={2}
+                    backgroundColor="rgb(139, 216, 237)"
+                    color="black"
+                  >
+                    Meet the Team
+                  </Button>
+                </Link>
               </div>
             </Fade>
           </Grid>
@@ -92,11 +104,12 @@ const About = () => (
               <div>
                 <h2>Client-oriented</h2>
                 <p>
-                  We know people are the bedrock of any business.  Our commitment to providing
-                  audit, accouting and business services while stregthening client relationships is at the forefront of our firm.
-                  We make it a point to work with our clients in any unforseem circumstances.  We will
-                  be known as a firm that puts clients first.
-
+                  We know people are the bedrock of any business. Our commitment
+                  to providing audit, accouting and business services while
+                  stregthening client relationships is at the forefront of our
+                  firm. We make it a point to work with our clients in any
+                  unforseem circumstances. We will be known as a firm that puts
+                  clients first.
                 </p>
               </div>
             </Fade>

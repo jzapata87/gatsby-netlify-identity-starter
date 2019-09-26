@@ -45,17 +45,23 @@ const About = () => (
       }
     `}
     render={data => (
-      <Section id="about" style={{backgroundColor: "rgb(139, 216, 237)"}}>
+      <Section id="about" style={{ backgroundColor: 'rgb(139, 216, 237)' }}>
         <Container>
           <Grid>
             <div>
               <h1>Services</h1>
               <p>
-                We provide a range of services to clients of different sizes.  Whether it be small businesses
-                gaining value by our bookkeeping service or non-profits ensuring compliance, our firm works hard to
-                provide tailored solutions to meet the needs of your organization.
+                We provide a range of services to clients of different sizes.
+                Whether it be small businesses gaining value by our bookkeeping
+                service or non-profits ensuring compliance, our firm works hard
+                to provide tailored solutions to meet the needs of your
+                organization.
               </p>
-              <Link to="/services"><Button my={2} backgroundColor="white" color="black">Learn More</Button></Link>
+              <Link to="/services">
+                <Button my={2} backgroundColor="white" color="black">
+                  Learn More
+                </Button>
+              </Link>
             </div>
             <Art>
               <Img fluid={data.art_fast.childImageSharp.fluid} />

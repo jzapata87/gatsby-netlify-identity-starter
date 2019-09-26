@@ -45,23 +45,25 @@ const Footer = () => (
     render={data => (
       <BoxFooter>
         <BoxFooterDetail>
-          <Box borderBottom='5px solid black'><BoxFooterDetailTitle>Location</BoxFooterDetailTitle></Box>
+          <Box borderBottom="5px solid black">
+            <BoxFooterDetailTitle>Location</BoxFooterDetailTitle>
+          </Box>
           <Text>765 East 7th Street</Text>
           <Text>Brownsville, Texas 78520</Text>
           <Text>956-544-7778</Text>
         </BoxFooterDetail>
         <BoxFooterDetail>
-          <Box mb={1} borderBottom='5px solid black'><BoxFooterDetailTitle>Connect</BoxFooterDetailTitle></Box>
+          <Box mb={1} borderBottom="5px solid black">
+            <BoxFooterDetailTitle>Connect</BoxFooterDetailTitle>
+          </Box>
           <SocialIcons>
             <img src={InstagramIcon} alt="link" />
             <img src={TwitterIcon} alt="link" />
           </SocialIcons>
-
         </BoxFooterDetail>
         <BoxFooterDetail>
-          <ValidationSchemaExample/>
+          <ValidationSchemaExample />
         </BoxFooterDetail>
-
       </BoxFooter>
     )}
   />
@@ -72,17 +74,13 @@ const BoxFooter = styled(Flex)`
   justify-content: space-evenly;
   align-content: center;
   align-items: center;
-
 `;
 
 const BoxFooterDetailTitle = styled(Text)`
   border-bottom: 2px solid black;
 `;
 
-
-const BoxFooterDetail = styled(Box)`
-
-`;
+const BoxFooterDetail = styled(Box)``;
 
 const SocialIcons = styled.div`
   display: flex;

@@ -39,7 +39,7 @@ const IndexPage = () => (
     <NewHeader />
     <About />
     <About2 />
-    <Footer/>
+    <Footer />
   </Layout>
 );
 
