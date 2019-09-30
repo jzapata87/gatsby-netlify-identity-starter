@@ -83,14 +83,11 @@ const BoxFooter = styled(Flex)`
   min-height: 50vh;
   justify-content: space-evenly;
   align-content: center;
+  flex-wrap: wrap;
 
 
 
-  @media (max-width: ${props => props.theme.screen.sm}) {
-    flex-direction: column;
-    align-items: center;
 
-  }
 `;
 
 const BoxFooterDetailTitle = styled(Text)`

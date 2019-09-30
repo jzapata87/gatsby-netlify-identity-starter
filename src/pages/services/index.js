@@ -2,13 +2,15 @@ import React from 'react';
 import { Link, graphql } from 'gatsby';
 import Layout from '@common/Layout';
 import { Heading, Box, Flex, Card } from 'rebass';
+import { ThemeProvider } from 'emotion-theming'
+import theme2 from '@styles/theme2';
 
 
 const Services = props => {
   const services = props.data.allMarkdownRemark.edges;
   return (
     <Layout>
-
+      <ThemeProvider theme={theme2}>
 
       <Box
         sx={{
@@ -26,12 +28,12 @@ const Services = props => {
           Services
         </Heading>
       </Box>
-      <Flex sx={{justifyContent: 'center', padding: '5vh'}} flexWrap="wrap">
+      <Flex sx={{justifyContent: 'center'}} mx={'auto'} maxWidth={["100%", "49em", "63em", "75em"]} flexWrap="wrap">
         {services.map(edge => (
           <Card
             m={4}
             p={2}
-            width={[1, 2 / 5, 1 / 4]}
+            width={[1, 1/2, 1/3, 1/4]}
             sx={{ borderStyle: 'solid', borderRadius: 6 }}
           >
             <h2>
@@ -43,6 +45,7 @@ const Services = props => {
           </Card>
         ))}
       </Flex>
+    </ThemeProvider>
     </Layout>
   );
 };

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Formik, Form, Field } from 'formik';
+import { Form, withFormik, FastField, ErrorMessage, Field, Formik } from 'formik'
 import { navigate } from 'gatsby-link';
 import * as Yup from 'yup';
 import styled from 'styled-components';
@@ -16,6 +16,9 @@ const SignupSchema = Yup.object().shape({
   email: Yup.string()
     .email('Invalid email')
     .required('Required'),
+  message: Yup.string()
+    .min(50, 'Please write a more detailed description')
+    .required('Required'),
 });
 
 function encode(data) {
@@ -27,6 +30,11 @@ function encode(data) {
 const Line = styled('hr')`
   border-width: 1px;
   margin: 4px 0px;
+  border-color: black;
+`;
+
+const Input = styled.input`
+  border-width: 1px;
   border-color: black;
 `;
 
@@ -78,6 +86,11 @@ export const ValidationSchemaExample = () => (
           </label>
           <Field name="email" type="email" style={{ borderStyle: 'solid', borderRadius: '5px' }}/>
           {errors.email && touched.email ? <div>{errors.email}</div> : null}
+          <label htmlFor="message" style={{ display: 'block' }}>
+            Message
+          </label>
+          <Field name="message" component="textarea" rows='4' style={{ borderStyle: 'solid', borderRadius: '5px' }}/>
+          {errors.message && touched.message ? <div>{errors.message}</div> : null}
           <button style={{ display: 'block' }} type="submit">
             Submit
           </button>
