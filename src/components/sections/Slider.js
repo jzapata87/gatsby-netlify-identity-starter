@@ -24,6 +24,10 @@ const Relative = styled(Heading)`
   position: relative;
 `;
 
+const StyledImage = styled(Img)`
+  height: 75vh;
+`;
+
 const Heading1 = styled(Heading)`
   position: absolute;
   left: 50%;
@@ -52,7 +56,7 @@ const Slider = () => (
       <Carousel controls="false">
         {data.allFile.edges.map(pic => (
           <Carousel.Item key={pic.relativePath}>
-            <Img fluid={pic.node.childImageSharp.fluid} />
+            <StyledImage fluid={pic.node.childImageSharp.fluid} />
           </Carousel.Item>
         ))}
       </Carousel>

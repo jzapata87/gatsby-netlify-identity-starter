@@ -92,7 +92,7 @@ function Navbar() {
         >
           <GLink to={'/'}>
             {' '}
-            <Image src={Logo} width="50px" p={2} fontWeight="bold" />
+            <Image src={Logo} width="40px" fontWeight="bold" />
           </GLink>
           <Box mx="auto" />
           <Mobile>
