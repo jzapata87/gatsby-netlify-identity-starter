@@ -5,19 +5,8 @@ import * as Yup from 'yup';
 import styled from 'styled-components';
 
 const SignupSchema = Yup.object().shape({
-  firstName: Yup.string()
-    .min(2, 'Too Short!')
-    .max(50, 'Too Long!')
-    .required('Required'),
-  lastName: Yup.string()
-    .min(2, 'Too Short!')
-    .max(50, 'Too Long!')
-    .required('Required'),
   email: Yup.string()
     .email('Invalid email')
-    .required('Required'),
-  message: Yup.string()
-    .min(50, 'Please write a more detailed description')
     .required('Required'),
 });
 
@@ -40,7 +29,7 @@ const Input = styled.input`
 
 export const ValidationSchemaExample = () => (
   <div>
-    <h1>Contact Us</h1>
+    <h1>Newsletter</h1>
     <Line/>
     <Formik
       initialValues={{
@@ -54,7 +43,7 @@ export const ValidationSchemaExample = () => (
           method: 'POST',
           headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
           body: encode({
-            'form-name': 'contact',
+            'form-name': 'newsletter',
             ...values,
           }),
         })
@@ -66,32 +55,10 @@ export const ValidationSchemaExample = () => (
       }}
     >
       {({ errors, touched }) => (
-        <Form data-netlify="true" method="POST" name="contact" action="/team">
-          <label htmlFor="email" style={{ display: 'block' }}>
-            First Name
-          </label>
-          <Field name="firstName" style={{ borderStyle: 'solid', borderRadius: '5px' }}/>
-          {errors.firstName && touched.firstName ? (
-            <div>{errors.firstName}</div>
-          ) : null}
-          <label htmlFor="email" style={{ display: 'block' }}>
-            Last Name
-          </label>
-          <Field name="lastName" style={{ borderStyle: 'solid', borderRadius: '5px' }}/>
-          {errors.lastName && touched.lastName ? (
-            <div>{errors.lastName}</div>
-          ) : null}
-          <label htmlFor="email" style={{ display: 'block' }}>
-            Email
-          </label>
-          <Field name="email" type="email" style={{ borderStyle: 'solid', borderRadius: '5px' }}/>
+        <Form data-netlify="true" method="POST" name="newsletter" action="/team">
+          <Field placeholder='Email' name="email" type="email" style={{ borderStyle: 'solid', borderRadius: '5px', padding: '4px' }}/>
           {errors.email && touched.email ? <div>{errors.email}</div> : null}
-          <label htmlFor="message" style={{ display: 'block' }}>
-            Message
-          </label>
-          <Field name="message" component="textarea" rows='4' style={{ borderStyle: 'solid', borderRadius: '5px' }}/>
-          {errors.message && touched.message ? <div>{errors.message}</div> : null}
-          <button style={{ display: 'block' }} type="submit">
+          <button style={{ borderWidth: '2px', display: 'block', marginTop: '4px', borderStyle: 'solid', borderRadius: '5px', padding: '4px' }} type="submit">
             Submit
           </button>
         </Form>

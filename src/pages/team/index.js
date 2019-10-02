@@ -32,8 +32,8 @@ const CardGrid = styled(Box)`
 const Team = props => {
   const team = props.data.allMarkdownRemark.edges;
   return (
-    <>
-      <Navbar />
+    <Layout>
+
 
       <Box
         sx={{
@@ -86,7 +86,7 @@ const Team = props => {
           </CardGrid>
         ))}
       </Flex>
-    </>
+    </Layout>
   );
 };
 

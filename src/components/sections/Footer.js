@@ -100,7 +100,8 @@ const BoxFooterDetail = styled('div')`
 `;
 
 const SocialIcons = styled.div`
-
+  display: flex;
+  justify-content: space-evenly;
 
   img {
     margin-right: 8px;

@@ -31,11 +31,11 @@ const Cox = styled(Box)`
   position: relative;
 `;
 
-const NewHeader = ({ children }) => (
+const NewHeader = ({ children, title }) => (
   <Cox>
     <AbBox alignItems="center" justifyContent="center">
       <Heading1 textAlign="center" as="h1" fontSize={[1, 1, 7]} bg="white">
-        Cascos CPA, PC
+        {title || 'Cascos CPA, PC' }
       </Heading1>
     </AbBox>
 
