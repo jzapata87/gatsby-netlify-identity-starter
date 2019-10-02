@@ -33,8 +33,6 @@ export const ValidationSchemaExample = () => (
     <Line/>
     <Formik
       initialValues={{
-        firstName: '',
-        lastName: '',
         email: '',
       }}
       validationSchema={SignupSchema}
