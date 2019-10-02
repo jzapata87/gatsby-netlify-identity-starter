@@ -54,7 +54,7 @@ export const ValidationSchemaExample = () => (
     >
       {({ errors, touched }) => (
         <Form data-netlify="true" method="POST" name="newsletter" action="/team">
-          <Field placeholder='Email' name="email" type="email" style={{ borderStyle: 'solid', borderRadius: '5px', padding: '4px' }}/>
+          <Field placeholder='Email' name="emailnews" type="email" style={{ borderStyle: 'solid', borderRadius: '5px', padding: '4px' }}/>
           {errors.email && touched.email ? <div>{errors.email}</div> : null}
           <button style={{ borderWidth: '2px', display: 'block', marginTop: '4px', borderStyle: 'solid', borderRadius: '5px', padding: '4px' }} type="submit">
             Submit
